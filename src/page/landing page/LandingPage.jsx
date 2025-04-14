@@ -1,5 +1,7 @@
 import "./LandingPage.css";
 import Info from "../../assets/info.png";
+import Kiri from "../../assets/kiri-bawah.png";
+import Kanan from "../../assets/kanan-bawah.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/react-splide/css";
@@ -38,10 +40,6 @@ function LandingPage() {
           kesejahteraan anggota dan masyarakat melalui koperasi, layanan prima,
           dan peran dalam pembangunan nasional.
         </p>
-
-        <div className="absolute top-10 left-10 w-16 h-16 bg-green-700" />
-        <div className="absolute top-20 left-4 w-12 h-12 border-2 border-green-600 rounded-full" />
-        <div className="absolute bottom-20 right-10 w-20 h-20 bg-green-700 rotate-45" />
       </section>
       <section className="flex flex-col md:flex-row justify-center gap-6 px-4 py-10">
         <div className="border-2 border-orange-400 rounded-xl p-2 w-full md:w-1/3 md:h-72 shadow flex flex-col justify-center">
@@ -163,24 +161,26 @@ function LandingPage() {
           ))}
         </div>
       </section>
-      <section className="w-full relative py-10 bg-white">
-        <div className="absolute bottom-0 left-0 w-full flex justify-between items-end px-10">
-          <div className="flex space-x-4">
-            <div className="w-10 h-10 border-2 border-green-700" />
-            <div className="w-10 h-10 bg-green-600 rotate-45" />
-            <div className="w-8 h-8 border-2 rounded-full border-green-700" />
+      <section className="w-full relative bg-white py-10">
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-end w-full max-w-6xl mx-auto px-4">
+          <img
+            src={Kiri}
+            alt="Koperasi KPRI"
+            className="h-40 md:h-64 w-auto mb-6 md:mb-0"
+          />
+          <div className="flex space-x-3 mb-6 md:mb-0">
+            {[...Array(4)].map((_, idx) => (
+              <span
+                key={idx}
+                className="w-4 h-4 md:w-5 md:h-5 border-2 border-orange-400 rounded-full"
+              />
+            ))}
           </div>
-          <div className="flex space-x-2 items-center">
-            <span className="w-3 h-3 bg-green-700 rounded-full" />
-            <span className="w-3 h-3 bg-orange-400 rounded-full" />
-            <span className="w-3 h-3 bg-orange-400 rounded-full" />
-            <span className="w-3 h-3 bg-orange-400 rounded-full" />
-          </div>
-          <div className="flex space-x-4">
-            <div className="w-10 h-10 bg-green-700" />
-            <div className="w-10 h-10 border-2 border-green-700 rotate-45" />
-            <div className="w-8 h-8 border-2 rounded-full border-green-700" />
-          </div>
+          <img
+            src={Kanan}
+            alt="Koperasi KPRI"
+            className="h-40 md:h-64 w-auto"
+          />
         </div>
       </section>
       <footer className="text-center text-xs text-orange-500 pt-8 bg-white">
