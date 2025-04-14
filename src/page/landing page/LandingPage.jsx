@@ -10,7 +10,7 @@ function LandingPage() {
   return (
     <div className="min-h-screen bg-white font-sans justify-center flex flex-wrap">
       <Navbar></Navbar>
-      <section className="pt-32 pb-8 text-center px-4 relative">
+      <section className="flex flex-col justify-center text-center px-4 relative h-96">
         <h1 className="text-4xl font-bold text-orange-500 mb-2">
           KPRI Universitas Jember
         </h1>

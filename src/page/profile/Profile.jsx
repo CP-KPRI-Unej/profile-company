@@ -7,143 +7,149 @@ import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/react-splide/css";
 
 function Profil() {
-    return (
-      <div className="min-h-screen bg-white font-sans justify-center flex flex-wrap">
-        <Navbar></Navbar>
-        <section className="pt-32 pb-8 text-center px-4 relative">
+  return (
+    <div className="min-h-screen bg-white font-sans justify-center flex flex-wrap">
+      <Navbar></Navbar>
+      <section className="flex flex-col justify-center pt-14 pb-3 text-center px-4 relative w-full">
+        <h1 className="text-4xl font-bold text-orange-500 mb-2">Visi</h1>
+        <p className="text-sm text-black">
+          “Menjadi Koperasi Terbaik Dalam Mensejahterakan Anggota dan Bermitra
+          Dengan Stakeholders”
+        </p>
+        <h1 className="text-4xl mt-5 font-bold text-orange-500 mb-2">Misi</h1>
+        <ol className="list-decimal text-sm  text-black m-auto md:pl-5 space-y-1 pl-10 text-left">
+          <li>Menyediakan Pelayanan Prima bagi anggota.</li>
+          <li>Mewujudkan Sumber Daya Manusia koperasi yang professional.</li>
+          <li>Menyediakan teknologi informasi yang handal.</li>
+          <li>Membangun jaringan usaha dengan pihak yang berkepentingan.</li>
+          <li>Meningkatkan social kepada anggota dan masyarakat sekitar.</li>
+          <li>Bersinergi dengan perguruan tinggi..</li>
+        </ol>
+      </section>
+      <section className="flex flex-col justify-center pt-14 pb-3 text-center px-4 relative">
+        <div className="w-3/4 m-auto flex flex-col gap-4">
           <h1 className="text-4xl font-bold text-orange-500 mb-2">
-            Testing
+            SEJARAH SINGKAT
           </h1>
-          <p className="text-sm text-orange-400">
-            KPRI Universitas Jember, sejak 1979, berupaya meningkatkan
-            kesejahteraan anggota dan masyarakat melalui koperasi, layanan prima,
-            dan peran dalam pembangunan nasional.
+          <p className="text-sm text-justify text-black">
+            Koperasi Pegawai Republik Indonesia Universitas Jember (KP-RI UNEJ)
+            didirikan pada 2 Agustus 1979 dengan nama awal Koperasi Pegawai
+            Negeri Universitas Jember (KPN-UNEJ). Tujuan utama pendiriannya
+            adalah untuk membantu masalah keuangan serta meningkatkan
+            kesejahteraan tenaga dosen dan tenaga administrasi di lingkungan
+            Universitas Jember.
           </p>
-        </section>
-        <section className="flex flex-col md:flex-row justify-center gap-16 px-4 py-10">
-          <div className="border-2 border-orange-400 rounded-xl p-2 w-full md:w-1/3 md:h-72 shadow flex flex-col justify-center">
-            <h2 className="text-xl font-bold text-center">VISI</h2>
-            <p className="text-center text-gray-700 text-sm  m-auto">
-              “Menjadi Koperasi Terbaik Dalam Mensejahterakan Anggota dan Bermitra
-              Dengan Stakeholders”
-            </p>
-          </div>
-          <div className="border-2 border-orange-400 rounded-xl p-2 w-full md:w-1/3 md:h-72 shadow flex flex-col justify-center ">
-            <h2 className="text-xl font-bold text-center">MISI</h2>
-            <ol className="list-decimal text-sm text-gray-700 m-auto md:pl-5 space-y-1 pl-10 text-left">
-              <li>Menyediakan Pelayanan Prima bagi anggota.</li>
-              <li>Mewujudkan Sumber Daya Manusia koperasi yang profesional.</li>
-              <li>Menyediakan teknologi informasi yang handal.</li>
-              <li>Membangun jaringan usaha dengan pihak yang berkompeten.</li>
-              <li>Meningkatkan sosial kepada anggota dan masyarakat sekitar.</li>
-              <li>Bersinergi dengan perguruan tinggi.</li>
-            </ol>
-          </div>
-        </section>
-        <section className="w-full py-10 px-6">
-          <h2 className=" text-orange-400 text-4xl font-bold text-center mb-6">
-            INFO
-          </h2>
-          <div className=" bg-orange-400 flex flex-col md:flex-row text-left gap-6">
-            <img
-              src={Info}
-              alt="Koperasi KPRI"
-              className="w-full md:w-1/3 h-80 rounded shadow-md"
-            />
-            <div className="flex-2 text-sm pt-8">
-              <h3 className="font-bold text-lg mb-5">
-                KOPERASI KPRI UNEJ ADALAH SALAH SATU KOPERASI PERCONTOHAN TERBAIK
-                DI INDONESIA
-              </h3>
-              <p className="pr-3">
-                Koperasi KPRI UNEJ saat ini sudah berusia 45 tahun. Koperasi yang
-                didirikan sejak tahun 1979 dan disahkan secara Badan Hukum sejak
-                1980, adalah salah satu koperasi yang...
-              </p>
-              <div className="flex justify-end pr-5">
-                <button className="text-right mt-5 px-4 py-2 bg-white text-orange-500 rounded-full text-sm font-semibold hover:bg-gray-100">
-                  Read More
-                </button>
+
+          <p className="text-sm text-black text-justify">
+            Seiring perkembangannya, keanggotaan koperasi tidak hanya terdiri
+            dari Pegawai Negeri Sipil (PNS) tetapi juga non-PNS. Oleh karena
+            itu, pada tahun 1993, namanya diubah menjadi Koperasi Pegawai
+            Republik Indonesia Universitas Jember (KP-RI UNEJ) agar lebih
+            mencerminkan anggotanya secara luas.
+          </p>
+
+          <p className="text-sm text-black text-justify">
+            Hingga tahun 2013, KP-RI UNEJ menunjukkan perkembangan yang positif,
+            ditandai dengan peningkatan partisipasi anggota, jumlah transaksi di
+            toko koperasi, serta peningkatan jumlah pinjaman dan simpanan
+            sukarela. Keberhasilan ini didukung oleh peningkatan kualitas
+            layanan koperasi, sesuai dengan moto "Pelayanan Prima adalah Visi
+            Kami, Kepuasan Anda adalah Kebahagiaan Kami."
+          </p>
+
+          <p className="text-sm text-black text-justify">
+            Selain itu, KP-RI UNEJ juga berperan dalam program Pendidikan Sistem
+            Ganda (PSG) dan magang, memberikan kesempatan bagi siswa dan
+            mahasiswa di Kabupaten Jember untuk mendapatkan pengalaman dalam
+            praktek penjualan, pergudangan, serta pembukuan akuntansi.
+          </p>
+        </div>
+      </section>
+      <section className="w-full flex flex-col justify-center pt-14 pb-3 text-center px-4 relative">
+        <div className="w-3/4 md:w-3/4 m-auto flex flex-col gap-4">
+          <div className="border-2 border-orange-400 rounded-xl p-6 flex flex-col items-center bg-white shadow-md space-y-6">
+            <h1 className="text-4xl font-bold text-orange-500 mb-4">
+              STRUKTUR ORGANISASI
+            </h1>
+            <div className="shadow-black shadow w-auto p-5 rounded-md">
+              <h2 className="text-orange-500 font-semibold">KETUA</h2>
+              <p>Prof. Dr. Yuli Witono, S.TP., MP.</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="shadow-black shadow w-auto p-5 rounded-md">
+                <h2 className="text-orange-500 font-semibold">SEKRETARIS</h2>
+                <p>Echwan Iriyanto, SH., MH.</p>
+              </div>
+              <div className="shadow-black shadow w-auto p-5 rounded-md">
+                <h2 className="text-orange-500 font-semibold">BENDAHARA</h2>
+                <p>Hadi Paramu, SE., M.BA., Ph.D.</p>
               </div>
             </div>
+
+            <div className="shadow-black shadow w-1/3 p-5 rounded-md">
+              <h2 className="text-orange-500 font-semibold">ANGGOTA</h2>
+              <ul className="space-y-1">
+                <li>dr. Al Munawir, M.Kes., Ph.D.</li>
+                <li>Dr. Ir. Herlina, MP., IPM.</li>
+                <li>Dr. Slamet Hariyadi, S.Pd., M.Si.</li>
+                <li>Adeharda Boru Sibasopait, SS</li>
+              </ul>
+            </div>
+
+            <div className="shadow-black shadow w-1/3 p-5 rounded-md">
+              <h2 className="text-orange-500 font-semibold">PENGAWAS</h2>
+              <ul className="space-y-1">
+                <li>Dr. Adenan, MM.</li>
+                <li>Prof. Dr. Hadi Prayitno, M.Kes</li>
+                <li>Nur Hisamuddin, SE., M.SA., Ak., CA</li>
+              </ul>
+            </div>
           </div>
-        </section>
-        <section className="py-10 px-4 w-full">
-          <h2 className="text-center text-2xl font-bold text-orange-500 mb-6">
-            BERITA TERKINI
-          </h2>
-          <Splide
-            options={{
-              type: "loop",
-              drag: "free",
-              focus: "center",
-              perPage: 3,
-              arrows: true,
-              pagination: false,
-              gap: "1rem",
-            }}
-            extensions={{ AutoScroll }}
-            aria-label="Informasi Terbaru"
-          >
-            {[
-              {
-                title:
-                  "PENINGKATAN KAPASITAS PENGELOLA KPRI UNEJ UNTUK KOPERASI YANG MANDIRI DAN BERKELAS",
-                text: "Pelatihan dan peningkatan kapasitas Pengelola KPRI UNEJ...",
-              },
-              {
-                title:
-                  "PENANDATANGANAN KERJA SAMA ANTARA KOPERASI UNEJ DENGAN MITRA",
-                text: "Pada Rabu pagi, 3 Juli 2024, telah diadakan penandatanganan kerja sama...",
-              },
-              {
-                title: "PELATIHAN KEUANGAN DIGITAL UNTUK ANGGOTA KPRI UNEJ",
-                text: "Memberikan edukasi keuangan digital untuk anggota koperasi...",
-              },
-            ].map((item, idx) => (
-              <SplideSlide className={"p-2"} key={idx}>
-                <div className="bg-white border-black shadow-md rounded-lg p-10 w-full h-60 mx-2 flex flex-col justify-between">
-                  <h4 className="text-orange-500 font-bold text-sm mb-2">
-                    {item.title}
-                  </h4>
-                  <p className="text-gray-700 text-sm mb-2">{item.text}</p>
-                  <button className="bg-orange-400 text-white px-3 py-1 text-sm rounded hover:bg-orange-500">
-                    Read More
-                  </button>
-                </div>
-              </SplideSlide>
-            ))}
-          </Splide>
-        </section>
-        <section className="py-10 w-full bg-white text-center px-4">
-          <h2 className="text-2xl font-bold text-orange-500 mb-6">DOWNLOAD</h2>
-          <div className="border-2 border-orange-400 rounded-xl p-6 max-w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-3 text-left text-sm text-blue-700">
-            {[
-              "Form Pengajuan Kredit Uang",
-              "Form Pengajuan Kredit Barang",
-              "Form Pendaftaran Anggota Baru",
-              "Tabel Angsuran Pinjaman Uang 350 Juta",
-              "Tabel Angsuran Pinjaman Barang 350 Juta",
-              "Tabel Angsuran Pinjaman 300 Juta",
-              "Form Pengajuan Dana Sosial Rawat Inap",
-              "Form Pengunduran Diri Anggota",
-              "Form Belanja Bulanan",
-              "Form Pinjaman Khusus",
-            ].map((text, idx) => (
-              <a
-                key={idx}
-                href="#"
-                className="hover:underline hover:text-blue-900"
-              >
-                {text}
-              </a>
-            ))}
-          </div>
-        </section>
-        <Footer></Footer>
-      </div>
-    );
-  }
-  
-  export default Profil;
-  
+        </div>
+      </section>
+
+      <section className="py-10 px-4 w-full">
+        <h2 className="text-center text-2xl font-bold text-orange-500 mb-6">
+          GALERI FOTO
+        </h2>
+        <Splide
+          options={{
+            type: "loop",
+            drag: "free",
+            focus: "center",
+            perPage: 3,
+            arrows: true,
+            pagination: false,
+            gap: "1rem",
+          }}
+          extensions={{ AutoScroll }}
+          aria-label="Informasi Terbaru"
+        >
+          {[
+            {
+              url: Info,
+            },
+            {
+              url: Info,
+            },
+            {
+              url: Info,
+            },
+          ].map((item, idx) => (
+            <SplideSlide className={"p-2"} key={idx}>
+              <img
+                src={item.url}
+                alt="Koperasi KPRI"
+                className="w-full md:w-3/4 rounded shadow-md"
+              />
+            </SplideSlide>
+          ))}
+        </Splide>
+      </section>
+      <Footer></Footer>
+    </div>
+  );
+}
+
+export default Profil;
