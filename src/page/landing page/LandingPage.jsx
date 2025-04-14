@@ -1,7 +1,7 @@
 import "./LandingPage.css";
 import Info from "../../assets/info.png";
-import Kiri from "../../assets/kiri-bawah.png";
-import Kanan from "../../assets/kanan-bawah.png";
+import Navbar from "../utils/navbar";
+import Footer from "../utils/footer";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/react-splide/css";
@@ -9,28 +9,7 @@ import "@splidejs/react-splide/css";
 function LandingPage() {
   return (
     <div className="min-h-screen bg-white font-sans justify-center flex flex-wrap">
-      <nav className="w-full bg-white shadow-md py-4 fixed top-0 z-50">
-        <ul className="flex justify-center flex-wrap gap-3 px-4">
-          {[
-            "Home",
-            "Profil",
-            "Gerai Layanan",
-            "Unit Jasa",
-            "Unit Simpan Pinjam",
-            "Unit Toko",
-            "Info Anggota",
-          ].map((item, idx) => (
-            <li key={idx}>
-              <a
-                href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
-                className="bg-orange-400 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-orange-500"
-              >
-                {item}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <Navbar></Navbar>
       <section className="pt-32 pb-8 text-center px-4 relative">
         <h1 className="text-4xl font-bold text-orange-500 mb-2">
           KPRI Universitas Jember
@@ -41,7 +20,7 @@ function LandingPage() {
           dan peran dalam pembangunan nasional.
         </p>
       </section>
-      <section className="flex flex-col md:flex-row justify-center gap-6 px-4 py-10">
+      <section className="flex flex-col md:flex-row justify-center gap-16 px-4 py-10">
         <div className="border-2 border-orange-400 rounded-xl p-2 w-full md:w-1/3 md:h-72 shadow flex flex-col justify-center">
           <h2 className="text-xl font-bold text-center">VISI</h2>
           <p className="text-center text-gray-700 text-sm  m-auto">
@@ -61,7 +40,7 @@ function LandingPage() {
           </ol>
         </div>
       </section>
-      <section className="w-5/6 py-10 px-6">
+      <section className="w-full py-10 px-6">
         <h2 className=" text-orange-400 text-4xl font-bold text-center mb-6">
           INFO
         </h2>
@@ -71,7 +50,7 @@ function LandingPage() {
             alt="Koperasi KPRI"
             className="w-full md:w-1/3 h-80 rounded shadow-md"
           />
-          <div className="flex-1 text-sm pt-8">
+          <div className="flex-2 text-sm pt-8">
             <h3 className="font-bold text-lg mb-5">
               KOPERASI KPRI UNEJ ADALAH SALAH SATU KOPERASI PERCONTOHAN TERBAIK
               DI INDONESIA
@@ -89,7 +68,7 @@ function LandingPage() {
           </div>
         </div>
       </section>
-      <section className="py-10 px-4 w-5/6">
+      <section className="py-10 px-4 w-full">
         <h2 className="text-center text-2xl font-bold text-orange-500 mb-6">
           BERITA TERKINI
         </h2>
@@ -123,7 +102,7 @@ function LandingPage() {
             },
           ].map((item, idx) => (
             <SplideSlide className={"p-2"} key={idx}>
-              <div className="bg-white border-black shadow-md rounded-lg p-4 w-full h-full mx-2">
+              <div className="bg-white border-black shadow-md rounded-lg p-10 w-full h-60 mx-2 flex flex-col justify-between">
                 <h4 className="text-orange-500 font-bold text-sm mb-2">
                   {item.title}
                 </h4>
@@ -138,7 +117,7 @@ function LandingPage() {
       </section>
       <section className="py-10 w-full bg-white text-center px-4">
         <h2 className="text-2xl font-bold text-orange-500 mb-6">DOWNLOAD</h2>
-        <div className="border-2 border-orange-400 rounded-xl p-6 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-3 text-left text-sm text-blue-700">
+        <div className="border-2 border-orange-400 rounded-xl p-6 max-w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-3 text-left text-sm text-blue-700">
           {[
             "Form Pengajuan Kredit Uang",
             "Form Pengajuan Kredit Barang",
@@ -161,31 +140,7 @@ function LandingPage() {
           ))}
         </div>
       </section>
-      <section className="w-full relative bg-white py-10">
-        <div className="flex flex-col md:flex-row justify-between items-center md:items-end w-full max-w-6xl mx-auto px-4">
-          <img
-            src={Kiri}
-            alt="Koperasi KPRI"
-            className="h-40 md:h-64 w-auto mb-6 md:mb-0"
-          />
-          <div className="flex space-x-3 mb-6 md:mb-0">
-            {[...Array(4)].map((_, idx) => (
-              <span
-                key={idx}
-                className="w-4 h-4 md:w-5 md:h-5 border-2 border-orange-400 rounded-full"
-              />
-            ))}
-          </div>
-          <img
-            src={Kanan}
-            alt="Koperasi KPRI"
-            className="h-40 md:h-64 w-auto"
-          />
-        </div>
-      </section>
-      <footer className="text-center text-xs text-orange-500 pt-8 bg-white">
-        © 2025 KOPERASI KPRI UNIVERSITAS JEMBER
-      </footer>
+      <Footer></Footer>
     </div>
   );
 }

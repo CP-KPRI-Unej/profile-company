@@ -1,15 +1,18 @@
 #root {
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
 @keyframes spin-slow {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
   }
-  .animate-spin-slow {
-    animation: spin-slow 20s linear infinite;
+  to {
+    transform: rotate(360deg);
   }
-  
+}
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
