@@ -1,9 +1,6 @@
 import "./GeraiLayanan.css";
-import Info from "../../assets/info.png";
 import Navbar from "../utils/navbar";
 import Footer from "../utils/footer";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/react-splide/css";
 
 function GeraiLayanan() {
