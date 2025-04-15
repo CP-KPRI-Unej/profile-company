@@ -1,4 +1,4 @@
-import "../landing page/LandingPage.css";
+import "./Profile.css";
 import Info from "../../assets/info.png";
 import Navbar from "../utils/navbar";
 import Footer from "../utils/footer";

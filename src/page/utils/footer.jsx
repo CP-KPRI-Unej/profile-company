@@ -1,5 +1,6 @@
 import Kiri from "../../assets/kiri-bawah.png";
 import Kanan from "../../assets/kanan-bawah.png";
+import './util.css';
 
 function footer() {
   return (
