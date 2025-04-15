@@ -8,7 +8,7 @@ import "@splidejs/react-splide/css";
 
 function Profil() {
   return (
-    <div className="min-h-screen bg-white font-sans justify-center flex flex-wrap">
+    <div id="profile" className="min-h-screen font-sans justify-center flex flex-wrap">
       <Navbar></Navbar>
       <section className="flex flex-col justify-center pt-14 pb-3 text-center px-4 relative w-full">
         <h1 className="text-4xl font-bold text-orange-500 mb-2">Visi</h1>
@@ -67,27 +67,27 @@ function Profil() {
       </section>
       <section className="w-full flex flex-col justify-center pt-14 pb-3 text-center px-4 relative">
         <div className="w-3/4 md:w-3/4 m-auto flex flex-col gap-4">
-          <div className="border-2 border-orange-400 rounded-xl p-6 flex flex-col items-center bg-white shadow-md space-y-6">
+          <div className="border-2 border-orange-400 rounded-xl p-6 flex flex-col items-center shadow-md space-y-6">
             <h1 className="text-4xl font-bold text-orange-500 mb-4">
               STRUKTUR ORGANISASI
             </h1>
-            <div className="shadow-black shadow w-auto p-5 rounded-md">
+            <div className="shadow-black shadow w-auto p-5 rounded-md bg-white">
               <h2 className="text-orange-500 font-semibold">KETUA</h2>
               <p>Prof. Dr. Yuli Witono, S.TP., MP.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="shadow-black shadow w-auto p-5 rounded-md">
+              <div className="shadow-black shadow w-auto p-5 rounded-md bg-white">
                 <h2 className="text-orange-500 font-semibold">SEKRETARIS</h2>
                 <p>Echwan Iriyanto, SH., MH.</p>
               </div>
-              <div className="shadow-black shadow w-auto p-5 rounded-md">
+              <div className="shadow-black shadow w-auto p-5 rounded-md bg-white">
                 <h2 className="text-orange-500 font-semibold">BENDAHARA</h2>
                 <p>Hadi Paramu, SE., M.BA., Ph.D.</p>
               </div>
             </div>
 
-            <div className="shadow-black shadow w-1/3 p-5 rounded-md">
+            <div className="shadow-black shadow w-1/3 p-5 rounded-md bg-white">
               <h2 className="text-orange-500 font-semibold">ANGGOTA</h2>
               <ul className="space-y-1">
                 <li>dr. Al Munawir, M.Kes., Ph.D.</li>
@@ -97,7 +97,7 @@ function Profil() {
               </ul>
             </div>
 
-            <div className="shadow-black shadow w-1/3 p-5 rounded-md">
+            <div className="shadow-black shadow w-1/3 p-5 rounded-md bg-white">
               <h2 className="text-orange-500 font-semibold">PENGAWAS</h2>
               <ul className="space-y-1">
                 <li>Dr. Adenan, MM.</li>

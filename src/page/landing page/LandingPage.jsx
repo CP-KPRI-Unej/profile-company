@@ -8,7 +8,7 @@ import "@splidejs/react-splide/css";
 
 function LandingPage() {
   return (
-    <div className="min-h-screen bg-white font-sans justify-center flex flex-wrap">
+    <div id="landingPage" className="min-h-screen font-sans justify-center flex flex-wrap">
       <Navbar></Navbar>
       <section className="flex flex-col justify-center text-center px-4 relative h-96">
         <h1 className="text-4xl font-bold text-orange-500 mb-2">
@@ -115,7 +115,7 @@ function LandingPage() {
           ))}
         </Splide>
       </section>
-      <section className="py-10 w-full bg-white text-center px-4">
+      <section className="py-10 w-full text-center px-4">
         <h2 className="text-2xl font-bold text-orange-500 mb-6">DOWNLOAD</h2>
         <div className="border-2 border-orange-400 rounded-xl p-6 max-w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-3 text-left text-sm text-blue-700">
           {[

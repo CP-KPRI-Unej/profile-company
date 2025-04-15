@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function navbar() {
   return (
-    <nav className="w-full bg-white shadow-md py-4 fixed top-0 z-50">
+    <nav className="w-full shadow-md py-4 fixed top-0 z-50">
       <ul className="flex flex-wrap justify-center gap-16 px-1">
         {[
           "Home",
