@@ -1,5 +1,8 @@
 import Navbar from "../utils/navbar";
 import Footer from "../utils/footer";
+import SimpanPinjam from "../../assets/simpan-pinjam.png";
+import SimpanPinjam2 from "../../assets/simpan-pinjam-2.png";
+import SimpanPinjam3 from "../../assets/simpan-pinjam-3.png";
 
 function UnitSimpanPinjam() {
   return (
@@ -11,101 +14,121 @@ function UnitSimpanPinjam() {
       <section className="flex flex-col justify-center pt-14 pb-3 text-center px-4 relative">
         <div className="w-3/4 m-auto flex flex-col gap-4 bg-white p-8 rounded-lg">
           <h1 className="text-4xl font-bold text-orange-500 mb-2">SIMPANAN</h1>
-          <ol className="list-decimal text-sm text-justify text-black">
-            <li className="font-bold">
-              Simpanan Pokok
-              <span className="font-normal">
-                , simpanan yang di bayar satu kali selama menjadi anggota.
-                Besarnya simpanan bergantung dari hasil kesepakatan pengurus dan
-                anggota koperasi. Simpanan hanya bisa di ambil kembali ketika
-                keluar dari keanggotaan Koperasi. Untuk saat ini Simpanan pokok
-                untuk menjadi anggota KP-RI Universitas Jember sebesar Rp.
-                100.000
-              </span>
-            </li>
-            <li className="font-bold">
-              Simpanan Wajib
-              <span className="font-normal">
-                , Untuk Layanan Simpan Pinjam bertempat di Kantor Koperasi KPRI
-                UNEJ Jl. Sumatra 101 A Jember , jam layanan : Jam 08.00 – 13.30
-                ( untuk hari Senin – Jum’at) , untuk hari sabtu layanan hanya
-                setengah hari , jam 08.00 – 10.30 , dan untuk Hari Minggu dan
-                tanggal Merah layanan Simpan Pinjam Tutup.simpanan yang wajib di
-                bayar sebulan sekali. Besarnya simpanan bergantung dari hasil
-                kesepakatan pengurus dan anggota koperasi, untuk saat ini
-                Simpanan wajib bagi anggota KP-RI Unej sebesar :
-                <ul className="list-inside list-disc">
-                  <li>Golongan I : Rp. 70.000</li>
-                  <li>Golongan II : Rp. 100.000</li>
-                  <li>Golongan III : Rp. 125.000</li>
-                  <li>Golongan IV : Rp. 200.000</li>
-                  <li>Honorer : Rp. 50.000</li>
-                </ul>
-              </span>
-            </li>
-            <li className="font-bold">
-              Simpanan Khusus
-              <span className="font-normal">
-                , simpanan yang besarnya tidak di tentukan, tetapi bergantung
-                kepada kemampuan anggota. Simpanan sukarela dapat di setorkan
-                setiap saat tetapi hanya bisa diambil sesuai jangka waktu
-                tertentu ( 1 tahun) , dengan jasa bersaing per Tahun
-              </span>
-            </li>
-            <li className="font-bold">
-              Simpanan Sukarela
-              <span className="font-normal">
-                , simpanan yang besarnya tidak di tentukan, tetapi bergantung
-                kepada kemampuan anggota, Simpanan sukarela dapat diambil hanya
-                pada jangka waktu tertentu, dengan ketentuan jasa :
-                <ul className="list-inside list-disc">
-                  <li>Simpanan periode 6 Bulan</li>
-                  <li>Simpanan periode 12 Bulan (1 tahun)</li>
-                </ul>
-              </span>
-            </li>
-            <li className="font-bold">
-              Tabungan Hari Raya
-              <span className="font-normal">
-                , Tabungan rutin bulanan yang akan dipotongkan kepada Anggota
-                yang memilih produk ini, dengan besaran yang tetap, dan hanya
-                bisa dibagi / diambil menjelang Hari Raya idul fitri.
-              </span>
-            </li>
-          </ol>
+          <div className="flex gap-8">
+            <img
+              src={SimpanPinjam}
+              alt="Cooperative Officials"
+              className="w-80 object-cover rounded-s-3xl rounded-e-3xl"
+            />
+            <ol className="list-decimal text-sm text-justify text-black">
+              <li className="font-bold">
+                Simpanan Pokok
+                <span className="font-normal">
+                  , simpanan yang di bayar satu kali selama menjadi anggota.
+                  Besarnya simpanan bergantung dari hasil kesepakatan pengurus
+                  dan anggota koperasi. Simpanan hanya bisa di ambil kembali
+                  ketika keluar dari keanggotaan Koperasi. Untuk saat ini
+                  Simpanan pokok untuk menjadi anggota KP-RI Universitas Jember
+                  sebesar Rp. 100.000
+                </span>
+              </li>
+              <li className="font-bold">
+                Simpanan Wajib
+                <span className="font-normal">
+                  , Untuk Layanan Simpan Pinjam bertempat di Kantor Koperasi
+                  KPRI UNEJ Jl. Sumatra 101 A Jember , jam layanan : Jam 08.00 –
+                  13.30 ( untuk hari Senin – Jum’at) , untuk hari sabtu layanan
+                  hanya setengah hari , jam 08.00 – 10.30 , dan untuk Hari
+                  Minggu dan tanggal Merah layanan Simpan Pinjam Tutup.simpanan
+                  yang wajib di bayar sebulan sekali. Besarnya simpanan
+                  bergantung dari hasil kesepakatan pengurus dan anggota
+                  koperasi, untuk saat ini Simpanan wajib bagi anggota KP-RI
+                  Unej sebesar :
+                  <ul className="list-inside list-disc">
+                    <li>Golongan I : Rp. 70.000</li>
+                    <li>Golongan II : Rp. 100.000</li>
+                    <li>Golongan III : Rp. 125.000</li>
+                    <li>Golongan IV : Rp. 200.000</li>
+                    <li>Honorer : Rp. 50.000</li>
+                  </ul>
+                </span>
+              </li>
+              <li className="font-bold">
+                Simpanan Khusus
+                <span className="font-normal">
+                  , simpanan yang besarnya tidak di tentukan, tetapi bergantung
+                  kepada kemampuan anggota. Simpanan sukarela dapat di setorkan
+                  setiap saat tetapi hanya bisa diambil sesuai jangka waktu
+                  tertentu ( 1 tahun) , dengan jasa bersaing per Tahun
+                </span>
+              </li>
+              <li className="font-bold">
+                Simpanan Sukarela
+                <span className="font-normal">
+                  , simpanan yang besarnya tidak di tentukan, tetapi bergantung
+                  kepada kemampuan anggota, Simpanan sukarela dapat diambil
+                  hanya pada jangka waktu tertentu, dengan ketentuan jasa :
+                  <ul className="list-inside list-disc">
+                    <li>Simpanan periode 6 Bulan</li>
+                    <li>Simpanan periode 12 Bulan (1 tahun)</li>
+                  </ul>
+                </span>
+              </li>
+              <li className="font-bold">
+                Tabungan Hari Raya
+                <span className="font-normal">
+                  , Tabungan rutin bulanan yang akan dipotongkan kepada Anggota
+                  yang memilih produk ini, dengan besaran yang tetap, dan hanya
+                  bisa dibagi / diambil menjelang Hari Raya idul fitri.
+                </span>
+              </li>
+            </ol>
+          </div>
         </div>
       </section>
-      <section className="flex flex-col w-full justify-center pt-14 pb-3 text-center px-4 relative">
+      <section className="flex flex-col w-full justify-center pt-7 pb-3 text-center px-4 relative">
         <div className="w-3/4 m-auto flex flex-col gap-4 bg-white p-8 rounded-lg">
           <h1 className="text-4xl font-bold text-orange-500 mb-2">PINJAMAN</h1>
-          <ol className="list-decimal text-sm text-justify text-black">
-            <li className="font-bold">
-              Pinjaman Uang
-              <span className="font-normal">
-                : Berupa layanan pinjaman untuk anggota KP-RI UNEJ yang
-                diterimakan dalam bentuk uang, dengan maksimal pinjaman sebesar
-                350 Juta dan maksimal angsuran selama 15 Tahun (180 Bulan),
-                dengan syarat dan ketentuan berlaku (untuk PNS dan HR), jasa
-                pinjaman 0,75 % perbulan.
-              </span>
-            </li>
-            <li className="font-bold">
-              Pinjaman Barang
-              <span className="font-normal">
-                : Berupa layanan pinjaman untuk anggota KP-RI UNEJ yang
-                diterimakan dalam bentuk pembayaran barang, semisal sepeda
-                motor, mobil, alat elektronik dan lainnya (bisa dibeli di toko /
-                dealer manapun), dengan maksimal pinjaman sebesar 350 Juta dan
-                maksimal angsuran selama 15 Tahun (180 Bulan), dengan syarat dan
-                ketentuan berlaku (untuk PNS dan HR) jasa pinjaman 0,75 %
-                perbulan.
-              </span>
-            </li>
-          </ol>
+          <div className="flex gap-8">
+            <img
+              src={SimpanPinjam2}
+              alt="Cooperative Officials"
+              className="w-80 object-cover rounded-s-3xl rounded-e-3xl"
+            />
+            <ol className="list-decimal text-sm text-justify text-black">
+              <li className="font-bold">
+                Pinjaman Uang
+                <span className="font-normal">
+                  : Berupa layanan pinjaman untuk anggota KP-RI UNEJ yang
+                  diterimakan dalam bentuk uang, dengan maksimal pinjaman
+                  sebesar 350 Juta dan maksimal angsuran selama 15 Tahun (180
+                  Bulan), dengan syarat dan ketentuan berlaku (untuk PNS dan
+                  HR), jasa pinjaman 0,75 % perbulan.
+                </span>
+              </li>
+              <li className="font-bold">
+                Pinjaman Barang
+                <span className="font-normal">
+                  : Berupa layanan pinjaman untuk anggota KP-RI UNEJ yang
+                  diterimakan dalam bentuk pembayaran barang, semisal sepeda
+                  motor, mobil, alat elektronik dan lainnya (bisa dibeli di toko
+                  / dealer manapun), dengan maksimal pinjaman sebesar 350 Juta
+                  dan maksimal angsuran selama 15 Tahun (180 Bulan), dengan
+                  syarat dan ketentuan berlaku (untuk PNS dan HR) jasa pinjaman
+                  0,75 % perbulan.
+                </span>
+              </li>
+            </ol>
+          </div>
         </div>
       </section>
-      <section className="flex flex-col justify-center pt-14 pb-3 text-center px-4 relative">
-        <div className="w-3/4 m-auto flex flex-col gap-4 bg-white p-8 rounded-lg">
+      <section className="flex flex-col justify-center pt-3 pb-3 text-center px-4 relative">
+        <div className="w-3/4 m-auto flex flex-col gap-4 bg-white p-5 rounded-lg">
+          <img
+            src={SimpanPinjam3}
+            alt="Cooperative Officials"
+            className="w-3/4 mb-4 object-cover rounded-s-3xl rounded-e-3xl m-auto"
+          />
           <h1 className="text-4xl font-bold text-orange-500 mb-2">
             DANA SOSIAL
           </h1>
