@@ -3,74 +3,126 @@ import Info from "../../assets/info.png";
 import Navbar from "../utils/navbar";
 import Footer from "../utils/footer";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+import Gambar1 from "../../assets/gambar1.png";
+import Gambar2 from "../../assets/gambar2.png";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/react-splide/css";
 
 function LandingPage() {
   return (
-    <div id="landingPage" className="min-h-screen font-sans justify-center flex flex-wrap">
+    <div
+      id="landingPage"
+      className="min-h-screen font-sans justify-center flex flex-wrap"
+    >
       <Navbar></Navbar>
-      <section className="flex flex-col justify-center text-center px-4 relative h-96">
-        <h1 className="text-4xl font-bold text-orange-500 mb-2">
-          KPRI Universitas Jember
-        </h1>
-        <p className="text-sm text-orange-400">
-          KPRI Universitas Jember, sejak 1979, berupaya meningkatkan
-          kesejahteraan anggota dan masyarakat melalui koperasi, layanan prima,
-          dan peran dalam pembangunan nasional.
-        </p>
-      </section>
-      <section className="flex flex-col md:flex-row justify-center gap-16 px-4 py-10">
-        <div className="border-2 border-orange-400 rounded-xl p-2 w-full md:w-1/3 md:h-72 shadow flex flex-col justify-center">
-          <h2 className="text-xl font-bold text-center">VISI</h2>
-          <p className="text-center text-gray-700 text-sm  m-auto">
-            “Menjadi Koperasi Terbaik Dalam Mensejahterakan Anggota dan Bermitra
-            Dengan Stakeholders”
+      <section className="relative w-full h-[500px] flex items-center bg-cover bg-center bg-[url(/src/assets/hero.png)]">
+        <div className="absolute inset-0 w-full"></div>
+        <div className="relative z-10 text-white text-left px-4 w-3/4 pl-8">
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4">
+            KPRI Universitas Jember untuk Masa Depan yang Lebih Sejahtera
+          </h1>
+          <p className="text-sm md:text-base max-w-2xl mb-6">
+            Solusi keuangan dan kebutuhan harian yang dikelola secara
+            profesional dan transparan.
           </p>
-        </div>
-        <div className="border-2 border-orange-400 rounded-xl p-2 w-full md:w-1/3 md:h-72 shadow flex flex-col justify-center ">
-          <h2 className="text-xl font-bold text-center">MISI</h2>
-          <ol className="list-decimal text-sm text-gray-700 m-auto md:pl-5 space-y-1 pl-10 text-left">
-            <li>Menyediakan Pelayanan Prima bagi anggota.</li>
-            <li>Mewujudkan Sumber Daya Manusia koperasi yang profesional.</li>
-            <li>Menyediakan teknologi informasi yang handal.</li>
-            <li>Membangun jaringan usaha dengan pihak yang berkompeten.</li>
-            <li>Meningkatkan sosial kepada anggota dan masyarakat sekitar.</li>
-            <li>Bersinergi dengan perguruan tinggi.</li>
-          </ol>
+          <a
+            href="https://wa.me/62xxxxxxxxxxx"
+            className="bg-orange-400 hover:bg-orange-500 text-white font-semibold py-2 px-6 rounded-full transition duration-300 text-sm"
+          >
+            Chat Kami di Whatsapp
+          </a>
         </div>
       </section>
-      <section className="w-full py-10 px-6">
-        <h2 className=" text-orange-400 text-4xl font-bold text-center mb-6">
-          INFO
-        </h2>
-        <div className=" bg-orange-400 flex flex-col md:flex-row text-left gap-6">
-          <img
-            src={Info}
-            alt="Koperasi KPRI"
-            className="w-full md:w-1/3 h-80 rounded shadow-md"
-          />
-          <div className="flex-2 text-sm pt-8">
-            <h3 className="font-bold text-lg mb-5">
-              KOPERASI KPRI UNEJ ADALAH SALAH SATU KOPERASI PERCONTOHAN TERBAIK
-              DI INDONESIA
-            </h3>
-            <p className="pr-3">
-              Koperasi KPRI UNEJ saat ini sudah berusia 45 tahun. Koperasi yang
-              didirikan sejak tahun 1979 dan disahkan secara Badan Hukum sejak
-              1980, adalah salah satu koperasi yang...
-            </p>
-            <div className="flex justify-end pr-5">
-              <button className="text-right mt-5 px-4 py-2 bg-white text-orange-500 rounded-full text-sm font-semibold hover:bg-gray-100">
-                Read More
-              </button>
+
+      <section className="py-12 h-[550px] mx-auto px-4 mb-5">
+        <div className="flex h-full gap-20 justify-center">
+          <div className="flex gap-9">
+            <div className="h-3/4 w-1/2">
+              <img
+                src={Gambar1}
+                alt="Cooperative Officials"
+                className="w-full h-full object-cover rounded-s-3xl rounded-e-3xl"
+              />
+            </div>
+            <div className="h-full w-1/2">
+              <img
+                src={Gambar2}
+                alt="Cooperative Officials"
+                className="w-full h-full object-cover rounded-s-3xl rounded-e-3xl"
+              />
+            </div>
+          </div>
+
+          <div className="space-y-10">
+            <div className="bg-orange-500 text-left text-white p-6 rounded-lg">
+              <h2 className="text-xl font-bold mb-4">
+                Visi
+                <div className="flex w-16 gap-1">
+                  <hr className="border-2 w-10 border-red-600 rounded-sm" />
+                  <hr className="border-2 w-2 border-red-600 rounded-sm" />
+                </div>
+              </h2>
+              <p>
+                "Menjadi Koperasi Terbaik Dalam Mensejahterakan Anggota dan
+                Bermitra Dengan Stakeholders"
+              </p>
+            </div>
+
+            <div className="border text-left border-gray-200 p-6 rounded-lg">
+              <h2 className="text-xl font-bold mb-4 pb-2 ">
+                Misi
+                <div className="flex w-16 gap-1">
+                  <hr className="border-2 w-10 border-red-600 rounded-sm" />
+                  <hr className="border-2 w-2 border-red-600 rounded-sm" />
+                </div>
+              </h2>
+              <ol className="list-decimal pl-6 space-y-2 mt-4">
+                <li>Menyediakan Pelayanan Prima bagi anggota.</li>
+                <li>
+                  Mewujudkan Sumber Daya Manusia koperasi yang profesional.
+                </li>
+                <li>Menyediakan teknologi informasi yang handal.</li>
+                <li>
+                  Membangun jaringan usaha dengan pihak yang berkepentingan.
+                </li>
+                <li>
+                  Meningkatkan sosial kepada anggota dan masyarakat sekitar.
+                </li>
+                <li>Bersinergi dengan perguruan tinggi.</li>
+              </ol>
             </div>
           </div>
         </div>
       </section>
+      <section className="w-full py-10 px-6">
+        <div className=" bg-orange-400 h-[352px] rounded-lg pl-7 grid grid-cols-2 md:flex-row text-left gap-6 overflow-visible relative mx-5">
+          <div className="flex-2 text-sm pt-8">
+            <h3 className="font-bold text-lg mb-5 text-white">
+              KOPERASI KPRI UNEJ ADALAH SALAH SATU KOPERASI PERCONTOHAN TERBAIK
+              DI INDONESIA
+            </h3>
+            <p className="pr-3 text-justify text-white">
+              Koperasi Pegawai Republik Indonesia (KPRI) Universitas Jember
+              merupakan salah satu koperasi percontohan terbaik di Indonesia
+              yang telah berdiri sejak 1979. Dengan layanan simpan pinjam, toko
+              kebutuhan harian, dan pengelolaan yang profesional serta
+              transparan, KPRI UNEJ berhasil meraih berbagai penghargaan
+              nasional dan menjadi inspirasi bagi koperasi lain. Didukung penuh
+              oleh civitas akademika Universitas Jember, koperasi ini terus
+              berinovasi dan berkembang sebagai koperasi modern yang
+              mengedepankan kesejahteraan anggota dan semangat gotong royong.
+            </p>
+          </div>
+          <img
+            src={Info}
+            alt="Koperasi KPRI"
+            className="w-full md:w-1/3 h-auto rounded absolute -right-10 -top-10 "
+          />
+        </div>
+      </section>
       <section className="py-10 px-4 w-full">
         <h2 className="text-center text-2xl font-bold text-orange-500 mb-6">
-          BERITA TERKINI
+        Artikel Terbaru
         </h2>
         <Splide
           options={{
