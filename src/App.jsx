@@ -11,8 +11,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/Home" element={<LandingPage />} />
-        <Route path="/Profil" element={<Profil />} />
+        <Route path="/Beranda" element={<LandingPage />} />
+        <Route path="/Tentang-Kita" element={<Profil />} />
         <Route path="/Gerai-Layanan" element={<GeraiLayanan />} />
         <Route path="/Unit-Jasa" element={<UnitJasa />} />
         <Route path="/Unit-Simpan-Pinjam" element={<UnitSimpanPinjam />} />

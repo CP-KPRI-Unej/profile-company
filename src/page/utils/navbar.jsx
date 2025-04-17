@@ -4,14 +4,14 @@ import "./util.css";
 
 function navbar() {
   return (
-    <nav className="w-full shadow-md py-4 fixed top-0 z-50 bg-white">
+    <nav className="w-full shadow-md py-2 fixed top-0 z-50 bg-white">
       <ul className="flex flex-wrap justify-center gap-16 px-1 items-center">
       <Link to="/" className="flex items-center mr-28">
-        <img src={Logo} alt="Logo" className="w-10 h-10 rounded-full" />
+        <img src={Logo} alt="Logo" className="w-8 h-8 rounded-full" />
       </Link>
         {[
-          "Home",
-          "Profil",
+          "Beranda",
+          "Tentang Kita",
           "Gerai Layanan",
           "Unit Jasa",
           "Unit Simpan Pinjam",
