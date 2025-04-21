@@ -8,14 +8,57 @@ import Gambar2 from "../../assets/gambar2.png";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/react-splide/css";
 
+import { Hero } from "../../components/import";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-fade";
+import { Autoplay, EffectFade } from "swiper/modules";
+import { data } from "../../data/data";
+
 function LandingPage() {
   return (
     <div
       id="landingPage"
       className="min-h-screen font-sans justify-center flex flex-wrap"
     >
+      <Swiper
+        spaceBetween={30}
+        speed={3000}
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        effect={"fade"}
+        fadeEffect={{ crossFade: true }}
+        modules={[Autoplay, EffectFade]}
+        className="mySwiper"
+      >
+        {data.map(
+          ({ id, colorDeep, mainText, subText, shadow, mobileShadow, img }) => (
+            <SwiperSlide
+              key={id}
+              style={{
+                backgroundImage: `url(${img})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}
+              className="relative w-full h-screen flex flex-col md:gap-10 gap-4 pt-4 md:pt-8"
+            >
+              <div className="absolute inset-0 bg-white bg-opacity-40 z-0"></div>
+              <div className="relative z-10">
+                <Hero
+                  colorDeep={colorDeep}
+                  mainText={mainText}
+                  subText={subText}
+                  shadow={shadow}
+                  mobileShadow={mobileShadow}
+                  img={img}
+                />
+              </div>
+            </SwiperSlide>
+          )
+        )}
+      </Swiper>
       <Navbar></Navbar>
-      <section className="relative w-full h-[500px] flex items-center bg-cover bg-center bg-[url(/src/assets/hero.png)]">
+      {/* <section className="relative w-full h-[500px] flex items-center bg-cover bg-center bg-[url(/src/assets/hero.png)]">
         <div className="absolute inset-0 w-full"></div>
         <div className="relative z-10 text-white text-left px-4 w-3/4 pl-8">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4">
@@ -32,7 +75,7 @@ function LandingPage() {
             Chat Kami di Whatsapp
           </a>
         </div>
-      </section>
+      </section> */}
 
       <section className="py-12 h-[550px] mx-auto px-4 mb-5">
         <div className="flex h-full gap-20 justify-center">
@@ -122,7 +165,7 @@ function LandingPage() {
       </section>
       <section className="py-10 px-4 w-full">
         <h2 className="text-center text-2xl font-bold text-orange-500 mb-6">
-        Artikel Terbaru
+          Artikel Terbaru
         </h2>
         <Splide
           options={{
