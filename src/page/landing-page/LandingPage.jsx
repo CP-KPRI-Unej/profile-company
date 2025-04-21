@@ -7,7 +7,6 @@ import Gambar1 from "../../assets/gambar1.png";
 import Gambar2 from "../../assets/gambar2.png";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/react-splide/css";
-
 import { Hero } from "../../components/import";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -24,14 +23,14 @@ function LandingPage() {
       <Swiper
         spaceBetween={30}
         speed={3000}
-        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        autoplay={{ delay: 1000, disableOnInteraction: false }}
         effect={"fade"}
         fadeEffect={{ crossFade: true }}
         modules={[Autoplay, EffectFade]}
         className="mySwiper"
       >
         {data.map(
-          ({ id, colorDeep, mainText, subText, shadow, mobileShadow, img }) => (
+          ({ id, colorDeep, colorButton,  mainText, subText, shadow, mobileShadow, img, colorLite }) => (
             <SwiperSlide
               key={id}
               style={{
@@ -42,10 +41,12 @@ function LandingPage() {
               }}
               className="relative w-full h-screen flex flex-col md:gap-10 gap-4 pt-4 md:pt-8"
             >
-              <div className="absolute inset-0 bg-white bg-opacity-40 z-0"></div>
+              <div className="absolute inset-0 bg-black bg-opacity-40 z-0"></div>
               <div className="relative z-10">
                 <Hero
                   colorDeep={colorDeep}
+                  colorLite={colorLite}
+                  colorButton={colorButton}
                   mainText={mainText}
                   subText={subText}
                   shadow={shadow}
@@ -58,6 +59,7 @@ function LandingPage() {
         )}
       </Swiper>
       <Navbar></Navbar>
+
       {/* <section className="relative w-full h-[500px] flex items-center bg-cover bg-center bg-[url(/src/assets/hero.png)]">
         <div className="absolute inset-0 w-full"></div>
         <div className="relative z-10 text-white text-left px-4 w-3/4 pl-8">

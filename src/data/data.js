@@ -3,8 +3,9 @@ import { img1, img2, img3 } from "../assets/Hero";
 export const data = [
   {
     id: 1,
-    colorDeep: "#304e70",
-    colorLite: "#d3dce0",
+    colorDeep: "#fff",
+    colorLite: "#fff",
+    colorButton: "#F18F0E",
     mainText: "KPRI Universitas Jember untuk Masa Depan yang Lebih Sejahtera",
     subText:
       "Solusi keuangan dan kebutuhan harian yang dikelola secara profesional dan transparan.",
@@ -14,19 +15,21 @@ export const data = [
   },
   {
     id: 2,
-    colorDeep: "#35553f",
-    colorLite: "#dcdfc0",
-    mainText: "nature",
+    colorDeep: "#fff",
+    colorLite: "#fff",
+    colorButton: "#F18F0E",
+    mainText: "Weekly Promo!",
     subText:
-      "Transform Your Skin, Unleash Your Beauty: Promoil's Argan Oil Magic.",
+      "Promo produk minggu ini",
     shadow: "0px 10px 20px rgba(130, 134, 99, 0.8)",
     mobileShadow: "0px 5px 20px rgba(130, 134, 99, 0.8)",
     img: img2,
   },
   {
     id: 3,
-    colorDeep: "#431e1e",
-    colorLite: "#e3d2c2",
+    colorDeep: "#fff",
+    colorLite: "#fff",
+    colorButton: "#F18F0E",
     mainText: "beauty",
     subText:
       "Reveal Your Radiance with Promoil: Where Beauty Meets Nature's Best.",
